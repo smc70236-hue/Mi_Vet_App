@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Veterinaria Huellitas - Mascotas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./css/stiles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body class="mascotas">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="sidebar-title">
+      <i class="fa-solid fa-paw"></i> Veterinaria Huellitas
+    </h2>
+
+    <nav>
+      <a href="index.html" data-roles="Administrador,Recepcionista,Veterinario">
+        <i class="fa-solid fa-house"></i> Inicio
+      </a>
+
+      <a href="clientes.html" data-roles="Administrador">
+        <i class="fa-solid fa-user"></i> Clientes
+      </a>
+
+      <a href="citas.html" data-roles="Administrador,Recepcionista">
+        <i class="fa-solid fa-calendar-check"></i> Citas
+      </a>
+
+      <a href="servicios.html" data-roles="Administrador,Recepcionista">
+        <i class="fa-solid fa-briefcase-medical"></i> Servicios
+      </a>
+
+      <a href="mis_citas.html" data-roles="Veterinario">
+        <i class="fa-solid fa-calendar-day"></i> Mis citas
+      </a>
+    </nav>
+  </aside>
+
+  <!-- PANEL PRINCIPAL -->
+  <main class="panel">
+
+    <!-- HEADER -->
+    <header class="panel-header">
+      <div class="header-left">
+        <button class="menu-toggle" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <h1>
+          <i class="fa-solid fa-dog"></i> Gestión de Mascotas
+        </h1>
+      </div>
+
+      <div class="header-right">
+        <span class="user-badge" data-user-indicator></span>
+      </div>
+    </header>
+
+    <!-- BOTÓN AGREGAR -->
+    <section class="acciones-superiores">
+      <button class="btn-agregar" onclick="location.href='add_mascota.html'">
+        <i class="fa-solid fa-plus"></i> Agregar Mascota
+      </button>
+    </section>
+
+    <!-- BUSCADOR -->
+    <section class="toolbar">
+      <label for="q">
+        <i class="fa-solid fa-magnifying-glass"></i> Buscar por teléfono:
+      </label>
+      <input id="q"
+             type="tel"
+             placeholder="Ej. 5512345678"
+             maxlength="10"
+             inputmode="numeric" />
+    </section>
+
+    <!-- TABLA -->
+    <section class="tabla-wrapper">
+      <table id="tablaMascotas">
+        <thead>
+          <tr>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>Especie</th>
+            <th>Raza</th>
+            <th>Edad</th>
+            <th>Peso (kg)</th>
+            <th>Dueño (Tel)</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td colspan="8" class="text-center">Cargando...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>@ Pixel & Byte 2025</p>
+    </footer>
+
+  </main>
+
+  <!-- JS (RUTAS CORREGIDAS) -->
+  <script src="../controlador/config.js"></script>
+  <script type="module" src="../controlador/mascotas.js"></script>
+
+</body>
+</html>

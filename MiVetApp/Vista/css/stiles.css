@@ -1,0 +1,838 @@
+body.index {
+    background: #f4f2ee;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+.index .sidebar {
+    height: 100vh;
+    width: 230px;
+    background: #6a5b45;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+}
+
+.index .sidebar footer {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 20px;
+    color: #e8dbca;
+    font-size: 13px;
+}
+
+.index .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff8e6;
+}
+
+.index .sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25s ease;
+    font-size: 15px;
+}
+
+.index .sidebar nav a i {
+    width: 22px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.index .sidebar nav a:hover {
+    background: rgba(255,255,255,0.18);
+    padding-left: 20px;
+}
+
+.index .panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+}
+
+.index .panel-header {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.index .header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.index .menu-toggle {
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #eae4dd;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.index .menu-toggle:hover {
+    background: #d5ccc1;
+}
+
+.index h1 {
+    font-size: 22px;
+    color: #6a5b45;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logito {
+    width: 45px;
+    height: 45px;
+}
+
+.index .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.index .user-badge {
+    padding: 8px 12px;
+    background: #6a5b45;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.index .btn-logout {
+    background: #8c775e;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.index .btn-logout:hover {
+    background: #7a6a53;
+}
+
+.index section {
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    max-width: 850px;
+}
+
+.index section h2 {
+    color: #6a5b45;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.index section p {
+    color: #555;
+    font-size: 16px;
+}
+
+.index footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* ------------ MASCOTAS (solo vista y tabla) ------------ */
+
+body.mascotas {
+  background: #eef3f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.mascotas .sidebar {
+  width: 240px;
+  background: #6a5b45;
+  color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.15);
+}
+
+.mascotas .sidebar h2 {
+  margin-top: 0;
+  font-size: 22px;
+  text-align: center;
+  color: #fff8e6;
+}
+
+.mascotas .sidebar nav a {
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.mascotas .sidebar nav a:hover {
+  background: rgba(255,255,255,0.15);
+  padding-left: 18px;
+}
+
+.mascotas .panel {
+  flex: 1;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mascotas .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 25px;
+}
+
+.mascotas .panel-header h1 {
+  font-size: 26px;
+  color: #6a5b45;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mascotas .btn-agregar {
+  background: #8c775e;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mascotas .btn-agregar:hover {
+  background: #7a6a53;
+}
+
+.mascotas .toolbar {
+  margin-bottom: 20px;
+}
+
+.mascotas .tabla-wrapper {
+  background: white;
+  padding: 26px !important;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.mascotas table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.mascotas table thead {
+  background: #6a5b45;
+  color: white;
+}
+
+.mascotas table th,
+.mascotas table td {
+  padding: 16px 14px !important;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.mascotas table tbody tr:hover {
+  background: #f0ece6 !important;
+}
+
+.mascotas table img {
+  width: 70px !important;
+  height: 70px !important;
+  object-fit: cover;
+  border-radius: 14px !important;
+}
+
+.mascotas footer {
+  margin-top: auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ------------ CLIENTES (vista + tabla) ------------ */
+
+body.clientes {
+    background: #f4f2ee;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.clientes .sidebar {
+    width: 230px;
+    background: #6a5b45;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+}
+
+.clientes .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff8e6;
+}
+
+.clientes .sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25s ease;
+    font-size: 15px;
+}
+
+.clientes .sidebar nav a:hover {
+    background: rgba(255,255,255,0.18);
+    padding-left: 20px;
+}
+
+.clientes .panel {
+    flex: 1;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.clientes .panel-header {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.clientes .btn-agregar {
+    background: #8c775e;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.clientes .btn-agregar:hover {
+    background: #7a6a53;
+}
+
+.clientes table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.clientes thead {
+    background: #6a5b45;
+    color: white;
+}
+
+.clientes th,
+.clientes td {
+    padding: 16px 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.clientes tbody tr:hover {
+    background: #f2ede7;
+}
+
+.clientes footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* ------------ SERVICIOS (vista + tabla) ------------ */
+
+body.servicios {
+    background: #f4f2ee;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.servicios .sidebar {
+    width: 230px;
+    background: #6a5b45;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+}
+
+.servicios .sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.servicios .sidebar nav a:hover {
+    background: rgba(255,255,255,0.18);
+    padding-left: 20px;
+}
+
+.servicios .panel {
+    flex: 1;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios .panel-header {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.servicios .btn-agregar {
+    background: #8c775e;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.servicios .btn-agregar:hover {
+    background: #7a6a53;
+}
+
+.servicios table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.servicios thead {
+    background: #6a5b45;
+    color: white;
+}
+
+.servicios table th,
+.servicios table td {
+    padding: 16px 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.servicios tbody tr:hover {
+    background: #f2ede7;
+}
+
+.servicios footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* ------------ DETALLE MASCOTAS (solo visual, sin inputs) ------------ */
+
+body.mascotas .detalle-mascota { margin-top: 25px; }
+
+body.mascotas .btn-secundario {
+    background: #e7e1da;
+    color: #5a4b37;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    transition: 0.25s ease;
+    margin-bottom: 18px;
+}
+
+body.mascotas .btn-secundario:hover {
+    background: #d6ccc2;
+    transform: translateY(-2px);
+}
+
+body.mascotas .detalle-card {
+    background: #ffffff;
+    padding: 35px 45px;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12),
+                0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+body.mascotas .detalle-mascota-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr; 
+    gap: 40px;
+    align-items: flex-start; 
+}
+
+
+.detalle-foto img,
+#fotoMascota {
+    width: 100%;
+    max-width: 380px;      
+    max-height: 300px;      
+    object-fit: cover;      
+    border-radius: 18px;
+    border: 2px solid #d6ccc2;
+}
+
+
+#fotoMascota {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    border: 2px solid #d6ccc2;
+}
+
+
+body.mascotas .detalle-info h2 {
+    color: #5a4b37;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+body.mascotas .detalle-info p {
+    font-size: 15px;
+    color: #4b4338;
+    margin: 6px 0;
+}
+
+body.mascotas .detalle-info hr {
+    border: none;
+    background: #ddd3c7;
+    height: 1px;
+    margin: 20px 0;
+}
+
+body.mascotas .detalle-actions {
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body.mascotas .btn-primario {
+    padding: 12px 20px;
+    background: #8c775e;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+body.mascotas .btn-primario:hover {
+    background: #7a6a53;
+}
+body.mascotas .panel {
+    flex: 1;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+body.mascotas .detalle-card {
+    overflow: hidden;
+}
+
+/* ============================
+   CUENTAS (Vista + Tabla)
+============================ */
+
+body.cuentas {
+    background: #f4f2ee;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* --- SIDEBAR --- */
+.cuentas .sidebar {
+    width: 230px;
+    background: #6a5b45;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+}
+
+.cuentas .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff8e6;
+}
+
+.cuentas .sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25s ease;
+    font-size: 15px;
+}
+
+.cuentas .sidebar nav a:hover {
+    background: rgba(255,255,255,0.18);
+    padding-left: 20px;
+}
+
+/* --- PANEL PRINCIPAL --- */
+.cuentas .panel {
+    flex: 1;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.cuentas .panel-header {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.cuentas .header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cuentas .menu-toggle {
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #eae4dd;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cuentas .menu-toggle:hover {
+    background: #d5ccc1;
+}
+
+.cuentas h1 {
+    font-size: 22px;
+    color: #6a5b45;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* User badge */
+.cuentas .user-badge {
+    padding: 8px 12px;
+    background: #6a5b45;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* --- BOTÓN AGREGAR --- */
+.cuentas .btn-agregar {
+    background: #8c775e;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cuentas .btn-agregar:hover {
+    background: #7a6a53;
+}
+
+/* --- TABLA DE CUENTAS --- */
+.cuentas table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cuentas thead {
+    background: #6a5b45;
+    color: white;
+}
+
+.cuentas th,
+.cuentas td {
+    padding: 16px 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.cuentas tbody tr:hover {
+    background: #f2ede7;
+}
+
+/* --- FOOTER --- */
+.cuentas footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* --- RESPONSIVE: igual que otras vistas --- */
+@media (max-width: 768px) {
+
+    .cuentas .sidebar {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        width: 230px;
+        height: 100vh;
+        transition: left 0.3s;
+        z-index: 1000;
+    }
+
+    .cuentas .sidebar.open {
+        left: 0;
+    }
+
+    .cuentas .menu-toggle {
+        display: inline-block;
+    }
+
+    .cuentas table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 900px) {
+    body.mascotas .detalle-mascota-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+.sidebar { display: flex; }
+
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .sidebar.is-open { display: flex; }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veterinaria Huellitas - Cuentas</title>
+
+  <!-- ❗ Ruta corregida -->
+  <link rel="stylesheet" href="./css/stiles.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body class="cuentas">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>Cuentas</h2>
+    <nav>
+      <!-- Inicio: todos los roles -->
+      <a href="index.html"
+         data-roles="Administrador,Recepcionista,Veterinario">
+        <i class="fa-solid fa-house"></i> Inicio
+      </a>
+
+      <!-- Clientes: Admin + Recepcionista + Veterinario -->
+      <a href="clientes.html"
+         data-roles="Administrador,Recepcionista,Veterinario">
+        <i class="fa-solid fa-user"></i> Clientes
+      </a>
+
+      <!-- Mascotas: Admin + Recepcionista + Vet -->
+      <a href="mascotas.html"
+         data-roles="Administrador,Recepcionista,Veterinario">
+        <i class="fa-solid fa-dog"></i> Mascotas
+      </a>
+
+      <!-- Cuentas: solo Admin -->
+      <a href="cuentas.html"
+         data-roles="Administrador">
+        <i class="fa-solid fa-user-shield"></i> Cuentas
+      </a>
+
+      <!-- Servicios -->
+      <a href="servicios.html"
+         data-roles="Administrador,Recepcionista">
+        <i class="fa-solid fa-briefcase-medical"></i> Servicios
+      </a>
+    </nav>
+  </div>
+
+  <!-- PANEL PRINCIPAL -->
+  <div class="panel">
+
+    <header class="panel-header">
+      <div class="header-left">
+        <button class="menu-toggle" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1><i class="fa-solid fa-user-shield"></i> Gestión de Cuentas</h1>
+      </div>
+
+      <span class="user-badge" data-user-indicator></span>
+    </header>
+
+    <div style="margin: 1rem 0;">
+      <button onclick="location.href='add_cuenta.html'" class="btn-agregar">
+        <i class="fa-solid fa-user-plus"></i> Agregar Cuenta
+      </button>
+    </div>
+
+    <div style="margin: 1rem 0;">
+      <label for="buscarrol">
+        <i class="fa-solid fa-magnifying-glass"></i> Buscar por rol:
+      </label>
+      <input type="text" id="buscarrol" placeholder="Ej. Administrador" />
+    </div>
+
+    <table id="tablaCuentas">
+      <thead>
+        <tr>
+          <th>Rol</th>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <footer><p>@ Pixel & Byte, 2025</p></footer>
+
+  </div>
+
+  <!-- Config Supabase -->
+  <script src="../controlador/config.js"></script>
+
+  <!-- Script principal de cuentas -->
+  <script type="module" src="../controlador/cuentas.js"></script>
+
+</body>
+</html>

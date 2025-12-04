@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veterinaria Huellitas- Servicios</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/stiles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body class="servicios">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Servicios</h2>
+
+    <nav>
+      <!-- Inicio: todos -->
+      <a href="index.html" data-roles="Administrador,Recepcionista,Veterinario">
+        <i class="fa-solid fa-house"></i> Inicio
+      </a>
+
+      <!-- Clientes: Admin + Recepcionista -->
+      <a href="clientes.html" data-roles="Administrador,Recepcionista">
+        <i class="fa-solid fa-user"></i> Clientes
+      </a>
+
+      <!-- Mascotas: todos -->
+      <a href="mascotas.html" data-roles="Administrador,Recepcionista,Veterinario">
+        <i class="fa-solid fa-dog"></i> Mascotas
+      </a>
+
+      <!-- Cuentas: solo Admin -->
+      <a href="cuentas.html" data-roles="Administrador">
+        <i class="fa-solid fa-user-gear"></i> Cuentas
+      </a>
+    </nav>
+  </div>
+
+  <!-- Panel principal -->
+  <div class="panel">
+
+    <!-- Header -->
+    <header class="panel-header">
+
+      <!-- Izquierda -->
+      <div class="header-left">
+        <button class="menu-toggle" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>
+          <i class="fa-solid fa-briefcase-medical"></i> Gestión de Servicios
+        </h1>
+      </div>
+
+      <!-- Derecha -->
+      <span class="user-badge" data-user-indicator></span>
+
+    </header>
+
+    <!-- Botones principales -->
+    <div style="margin: 1rem 0;">
+      <button onclick="location.href='add_servicio.html'" class="btn-agregar">
+        <i class="fa-solid fa-plus"></i> Agregar Servicio
+      </button>
+
+      <button onclick="location.href='citas.html'" class="btn-agregar" style="margin-left: .5rem;">
+        <i class="fa-solid fa-calendar-check"></i> Ver / Programar Citas
+      </button>
+    </div>
+
+    <!-- Buscador -->
+    <div style="margin: 1rem 0;">
+      <label for="buscarNombre">
+        <i class="fa-solid fa-magnifying-glass"></i> Buscar por nombre:
+      </label>
+      <input type="text" id="buscarNombre" placeholder="Ej. Vacunación">
+    </div>
+
+    <!-- Tabla de servicios -->
+    <table id="tablaServicios">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Costo</th>
+          <th>Duración (min)</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <footer>
+      <p>@ Pixel & Byte, 2025</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="../controlador/config.js"></script>
+  <script type="module" src="../controlador/servicios.js"></script>
+
+</body>
+
+</html>

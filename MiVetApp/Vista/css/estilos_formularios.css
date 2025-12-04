@@ -1,0 +1,191 @@
+/* ---------------------- LOGIN ---------------------- */
+
+body.login {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d8dfd0, #bcd3d8);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-card {
+    background: #ffffff;
+    width: 360px;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease;
+}
+
+.form-header h1 {
+    margin: 0 0 25px 0;
+    color: #6a5b45;
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #8c775e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(140, 119, 94, 0.4);
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: #8c775e;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #7a6a53;
+}
+
+/* --------------------- ADD PAGE --------------------- */
+
+body.add-page {
+    background: linear-gradient(145deg, #f0ede7, #e7e2db);
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-page .form-card {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 22px;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.12),
+        0 4px 12px rgba(0,0,0,0.06);
+    animation: fadeIn .5s ease;
+    width: 100%;
+}
+
+.add-page .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.add-page .form-header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #5a4b37;
+    font-weight: 700;
+}
+
+.add-page .form-group {
+    margin-bottom: 18px;
+}
+
+.add-page .form-group label {
+    color: #5a4b37;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.add-page .form-group input,
+.add-page .form-group select,
+.add-page .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-size: 15px;
+    background: #fbf8f5;
+    border: 1px solid #d6ccc2;
+    transition: .25s;
+}
+
+.add-page .form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.add-page .btn-primary {
+    background: #8c775e;
+    padding: 14px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add-page .btn-link-cancelar {
+    background: #e3dbd4;
+    padding: 14px 20px;
+    border-radius: 14px;
+    color: #5a4b37;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---------------------- FORM CITA ---------------------- */
+
+body.add-page #frmCita {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+body.add-page #frmCita input,
+body.add-page #frmCita select {
+    padding: 12px 14px;
+    font-size: 15px;
+    background: #fbf8f5;
+    border-radius: 14px;
+    border: 1px solid #d6ccc2;
+}
+
+body.add-page #frmCita button[type="submit"] {
+    width: 100%;
+    padding: 14px 20px;
+    background: #8c775e;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
